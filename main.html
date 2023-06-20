@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Br-Badize</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="pyscript/pyscript.css" />
+    <script defer src="pyscript/pyscript.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <py-config src="pyscript/pyscript.toml"></py-config>
+    <py-script src="python/main.py"></py-script>
+    <div class='container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center'>
+        <div class='col-md p-4 text-center'>
+            <h1>[Br]eaking that text [Ba]d!</h1>
+            <textarea class="m-3 col" type="text" id="text_input" name="text_input" style="height: 30vh; width: 100%;" cols="100">Place your glorious text here and push da button! And we'll see if there are some periodic table elements here. Breaking Bad!</textarea>
+            <button type="button" class="btn btn-success py-button" py-click="breaking_bad_time()">Bring it on!</button>
+            <div class="m-3 col text-start" id="text_output" style="height: 30vh; width: 100%;" cols="100">Result will be here.</div>
+        </div>
+    </div>
+    <script src="bootstrap/bootstrap-bundle-min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
